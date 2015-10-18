@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_half_horizontal_margin"
+    android:paddingRight="@dimen/activity_half_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/newSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search (by title or source)"/>
+    <view
+        android:layout_below="@+id/newSearch"
+        android:id="@+id/home_recycler_view"
+        class="android.support.v7.widget.RecyclerView"
+        android:cacheColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true" />
+    <com.example.m02264.dailyy.customfonts.TextAwesome
+        android:layout_alignParentBottom="true"
+        android:id="@+id/apiHits"
+        android:text="Fetching..."
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+</RelativeLayout>

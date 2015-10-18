@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/itemSepColor"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:background="@color/newsItemBgColor"
+        android:layout_height="60dp"
+        android:weightSum="3"
+        >
+        <LinearLayout
+            android:layout_weight="3"
+            android:orientation="horizontal" android:layout_width="0dp"
+            android:background="@color/newsItemBgColor"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            >
+            <ImageView
+                android:id="@+id/thumbImg"
+                android:src="@drawable/thumb_image"
+                android:layout_gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:id="@+id/newsText"
+                android:paddingLeft="10dp"
+                android:textColor="@color/newsTextColor"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="right|center_vertical"
+            android:id="@+id/arrowPlaceHolder"
+            android:src="@drawable/ic_navigate_next_black"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+    </LinearLayout>
+</LinearLayout>
