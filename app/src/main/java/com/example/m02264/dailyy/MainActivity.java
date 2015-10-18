@@ -12,29 +12,21 @@ import android.widget.Toast;
 
 import com.example.m02264.dailyy.adapters.NewsListAdapter;
 import com.example.m02264.dailyy.retrofit.models.Articles;
-import com.example.m02264.dailyy.retrofit.models.NewsAPI;
-import com.example.m02264.dailyy.retrofit.models.NewsAPIRequest;
 import com.example.m02264.dailyy.retrofit.models.NewsItems;
-import com.example.m02264.dailyy.retrofit.models.NewsRequests;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.octo.android.robospice.persistence.DurationInMillis;
-import com.octo.android.robospice.persistence.exception.CacheCreationException;
-import com.octo.android.robospice.persistence.exception.CacheLoadingException;
 import com.octo.android.robospice.persistence.exception.SpiceException;
 import com.octo.android.robospice.request.listener.RequestListener;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import com.example.m02264.dailyy.network.NewsAPIRequest;
+import com.example.m02264.dailyy.network.NewsRequests;
 
 public class MainActivity extends DailyBaseActivity {
 

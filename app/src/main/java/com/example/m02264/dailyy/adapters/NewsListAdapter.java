@@ -22,7 +22,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 /**
- * Created by m02264 on 18/10/15.
+ * Created by Jayanth on 18/10/15.
  */
 public class NewsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     NewsItems mNewsItems;

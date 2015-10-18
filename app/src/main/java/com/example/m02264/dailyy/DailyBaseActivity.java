@@ -3,8 +3,9 @@ package com.example.m02264.dailyy;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.m02264.dailyy.retrofit.models.JsonObjectRetrofitSpiceService;
 import com.octo.android.robospice.SpiceManager;
+
+import com.example.m02264.dailyy.network.JsonObjectRetrofitSpiceService;
 
 /**
  * Created by Jayanth on 18/10/15.

@@ -1,4 +1,4 @@
-package com.example.m02264.dailyy.retrofit.models;
+package com.example.m02264.dailyy.network;
 
 import com.google.gson.JsonObject;
 
@@ -11,11 +11,11 @@ import retrofit.http.Query;
 public interface NewsAPI {
      interface NewsItems{
          @GET("/")
-         JsonObject getNewsItems(@Query("type")String type, @Query("query") String querType);
+         JsonObject getNewsItems(@Query("type") String type, @Query("query") String querType);
      }
 
     interface NewsAPIHits{
         @GET("/")
-        JsonObject getNewsItems(@Query("type")String type, @Query("query") String querType);
+        JsonObject getNewsItems(@Query("type") String type, @Query("query") String querType);
     }
 }

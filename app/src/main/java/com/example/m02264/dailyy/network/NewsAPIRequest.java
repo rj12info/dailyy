@@ -1,11 +1,11 @@
-package com.example.m02264.dailyy.retrofit.models;
+package com.example.m02264.dailyy.network;
 
 import com.google.gson.JsonObject;
 
 /**
  * Created by Jayanth on 18/10/15.
  */
-public class NewsAPIRequest extends  AbstractSpiceRetrofitRequest<NewsAPI.NewsAPIHits> {
+public class NewsAPIRequest extends AbstractSpiceRetrofitRequest<NewsAPI.NewsAPIHits> {
         String type,query;
     public NewsAPIRequest(String type, String query) {
         super(NewsAPI.NewsAPIHits.class);

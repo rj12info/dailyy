@@ -1,4 +1,4 @@
-package com.example.m02264.dailyy.retrofit.models;
+package com.example.m02264.dailyy.network;
 
 import com.google.gson.JsonObject;
 import com.octo.android.robospice.request.retrofit.RetrofitSpiceRequest;

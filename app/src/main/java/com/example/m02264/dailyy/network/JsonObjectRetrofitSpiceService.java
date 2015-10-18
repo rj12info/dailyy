@@ -1,14 +1,12 @@
-package com.example.m02264.dailyy.retrofit.models;
+package com.example.m02264.dailyy.network;
 
 import android.app.Application;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.octo.android.robospice.SpiceService;
 import com.octo.android.robospice.persistence.CacheManager;
 import com.octo.android.robospice.persistence.exception.CacheCreationException;
 import com.octo.android.robospice.persistence.retrofit.RetrofitObjectPersisterFactory;
-import com.octo.android.robospice.retrofit.RetrofitGsonSpiceService;
 import com.octo.android.robospice.retrofit.RetrofitSpiceService;
 
 import java.io.File;
@@ -21,7 +19,7 @@ import retrofit.converter.Converter;
 import retrofit.converter.GsonConverter;
 
 /**
- * Created by m02264 on 18/10/15.
+ * Created by Jayanth on 18/10/15.
  */
 public class JsonObjectRetrofitSpiceService extends RetrofitSpiceService {
     private RequestInterceptor requestInterceptor;

@@ -1,7 +1,7 @@
 package com.example.m02264.dailyy.customfonts;
 
 /**
- * Created by m02264 on 18/10/15.
+ * Created by Jayanth on 18/10/15.
  */
 
 import android.graphics.Typeface;
